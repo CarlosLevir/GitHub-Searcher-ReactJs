@@ -5,9 +5,10 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <AppBar title="GitHub Searcher">
+                <AppBar position="static">
                     <Tabs>
                         <Tab label="Home" />
+                        <Tab label="Credits" />
                     </Tabs>
                 </AppBar>
             </div>
