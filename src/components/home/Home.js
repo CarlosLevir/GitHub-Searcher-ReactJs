@@ -8,18 +8,20 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <TextField
-                    id="home-searcher"
-                    label="Search for a GitHub user here XD"
-                    style={{}}
-                    placeholder="GitHub User"
-                    helperText=""
-                    margin="normal"
-                    variant="outlined"
-                    InputLabelProps={{
-                        shrink: true,
-                    }}
-                />
+                <div id="div-searcher">
+                    <TextField
+                        id="home-searcher"
+                        label="Search for a GitHub user here XD"
+                        style={{}}
+                        placeholder="GitHub User"
+                        helperText=""
+                        margin="normal"
+                        variant="outlined"
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                </div>
             </div>
         );
     }

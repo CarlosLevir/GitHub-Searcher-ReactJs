@@ -1,3 +1,10 @@
 #home-searcher{
     width: 60vw;
 }
+#div-searcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
