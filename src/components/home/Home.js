@@ -29,7 +29,6 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <div id="div-searcher">
                     <SearchUser 
                         updateUser={this.updateUser}
                         updateRepos={this.updateRepos}
@@ -38,7 +37,6 @@ class Home extends Component {
                         user={this.state.user}
                         repos={this.state.repos}
                     />
-                </div>
             </div>
         );
     }

@@ -1,10 +1,16 @@
 #home-searcher{
     width: 60vw;
 }
-#div-searcher{
+.div-searcher{
+    align-items: flex-end;
+    width: 100vw;
+    height: 40vh;
+}
+.search-button-div{
+    width: 100%;
+}
+.div-searcher,
+.search-button-div{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 80vh;
 }
