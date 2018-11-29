@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
+import UserRepos from '../userRepos/UserRepos'
 import Card from '@material-ui/core/Card';
 import { CardContent } from '@material-ui/core';
 import propTypes from 'prop-types'
+import './userProfile.css'
 
 class UserProfile extends Component {
     render() {
         var userProfile = this.props.user ?
         (
-            <Card>
-                <CardContent>
-                    <div className="row">
-                        <div className="col-lg-4">
-                        <img className="img-circle" src={this.props.user.avatar_url} alt="avatar" width="140" height="140" />
-                        <h2>{this.props.user.login}</h2>
-                        <p>{this.props.user.name}</p>
-                        <p>Followers: {this.props.user.followers} / Following: {this.props.user.following}</p>
-                        <p><a className="btn btn-default" href={this.props.user.html_url} role="button">View details</a></p>
+            <div>
+                <Card>
+                    <CardContent>
+                        <div>
+                            <img className="avatar-profile" src={this.props.user.avatar_url} alt="Profile Image"/>
+                            <h2>{this.props.user.login}</h2>
+                            <p>{this.props.user.name}</p>
+                            <p>Followers: {this.props.user.followers} / Following: {this.props.user.following}</p>
+                            <p><a href={this.props.user.html_url}>View details</a></p>
                         </div>
-                        <div className="col-lg-8">
-                        </div>
-                    </div>
-                </CardContent>
-            </Card>
+                    </CardContent>
+                </Card>
+                <div>
+                    <UserRepos
+                        repos={this.props.repos}
+                    />
+                </div>
+            </div>
         ) : null;
 
         return userProfile;
