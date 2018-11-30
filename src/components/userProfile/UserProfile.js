@@ -14,7 +14,7 @@ class UserProfile extends Component {
     render() {
         var userProfile = this.props.user ?
         (
-            <div className="profile-info">
+            <div>
                 <div className="div-profile-card">
                     <Card className="profile-card">
                         <CardActionArea>
@@ -46,11 +46,9 @@ class UserProfile extends Component {
                         </CardActions>
                         </Card>
                 </div>
-                <div>
-                    <UserRepos
-                        repos={this.props.repos}
-                    />
-                </div>
+                <UserRepos
+                    repos={this.props.repos}
+                />
             </div>
         ) : null;
 

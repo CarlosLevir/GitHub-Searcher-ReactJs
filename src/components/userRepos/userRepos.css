@@ -1,5 +1,10 @@
 .card-items{
     width: 345px;
     height: 200px;
-    margin: 2%;
+    margin: 5px;
+}
+.div-cards-repos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

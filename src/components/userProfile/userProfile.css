@@ -8,6 +8,7 @@
 .card-media{
     height: 200px;
 }
-.profile-info{
-    display: inline;
+.div-profile-card{
+    display: flex;
+    justify-content: center;
 }
