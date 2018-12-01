@@ -18,26 +18,25 @@ class UserRepos extends Component {
                             <Typography component="p" color="textSecondary">
                                 {repo.description}
                             </Typography>
+                            <Typography component="p" color="textSecondary">
+                                Stars: {repo.stargazers_count}
+                            </Typography>
+                            <Typography
+                                component="p"
+                                size="small">
+                                Issues: {repo.open_issues}
+                            </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">View Details</Button>
-                        </CardActions>
-                        <CardActions>
-                            <Button size="small">Issues: {repo.open_issues}</Button>
+                            <Button
+                                href={repo.html_url}
+                                target="__blank"
+                                size="small"
+                                color="primary">
+                                View Details
+                            </Button>
                         </CardActions>
                     </Card>
-                // <div key={key} >
-                //     <div>
-                //         <h3>{repo.name}
-                //             <span >{repo.stargazers_count} STARS</span>
-                //         </h3>
-                //         <p>{repo.description}</p>
-                //         <p>
-                //             <a href={repo.html_url}>Repository</a>
-                //             <a href={repo.html_url + '/issues'}>Issues ({repo.open_issues}) </a>
-                //         </p>
-                //     </div>
-                // </div>
             );
         })
 

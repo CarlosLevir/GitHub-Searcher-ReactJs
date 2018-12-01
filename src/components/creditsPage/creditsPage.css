@@ -1,0 +1,18 @@
+.credits-div-card{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credits-card{
+    height: 100px;
+    width: 80%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart{
+    color: #ff0000;
+}

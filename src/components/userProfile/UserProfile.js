@@ -37,18 +37,21 @@ class UserProfile extends Component {
                             <Typography component="p">
                                 Followers: {this.props.user.followers}
                             </Typography>
+                            <Typography component="p">
+                                Repositories: {this.props.user.public_repos}
+                            </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
+                            <Button href={this.props.user.html_url} target="__blank" size="small" color="primary">
                                 View Details
                             </Button>
                         </CardActions>
                         </Card>
                 </div>
-                <UserRepos
+                    <UserRepos
                     repos={this.props.repos}
-                />
+                    />
             </div>
         ) : null;
 

@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
-import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
+import { AppBar, Tabs, Tab } from '@material-ui/core';
 import HomePage from '../homePage/HomePage';
 import Home from '@material-ui/icons/Home';
 import Copyright from '@material-ui/icons/Copyright'
-
-function TabContainer(props) {
-    return (
-      <Typography component="div" style={{ padding: 8 * 3 }}>
-        {props.children}
-      </Typography>
-    );
-  }
+import CreditsPage from '../creditsPage/CreditsPage'
 
 class Header extends Component {
     constructor(props){
@@ -37,7 +30,7 @@ class Header extends Component {
                 </Tabs>
                 </AppBar>
                 {this.state.value === 1 && <HomePage />}
-                {this.state.value === 2 && <TabContainer>Credits</TabContainer>}
+                {this.state.value === 2 && <CreditsPage />}
             </div>
         );
     }
