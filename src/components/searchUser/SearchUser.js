@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Search from '@material-ui/icons/Search';
 import * as GitHubUser from '../../services/GitHubUser';
 import propTypes from 'prop-types';
+import inspectocat from '../../images/inspectocat.png'
 
 class SearchUser extends Component {
     constructor(props){
@@ -33,28 +34,33 @@ class SearchUser extends Component {
 
     render() {
         return (
-            <div className="div-searcher">
-                <form method="POST" onSubmit={this.handleSubmit}>
-                    <TextField
-                        id="home-searcher"
-                        name="userName"
-                        label="Search for a GitHub user here XD"
-                        placeholder="GitHub User"
-                        helperText=""
-                        margin="normal"
-                        variant="outlined"
-                        required
-                        InputLabelProps={{
-                            shrink: true,
-                        }}
-                    />
-                    <div className="search-button-div">
-                        <Button variant="contained" color="primary" type="submit">
-                            <Search />
-                            Search
-                        </Button>
-                    </div>
-                </form>
+            <div>
+                <div className="inspectocat-div-image">
+                    <img className="inspectocat-image" src={inspectocat} alt="Inspectocat" />
+                </div>
+                <div className="div-searcher">
+                    <form method="POST" onSubmit={this.handleSubmit}>
+                        <TextField
+                            id="home-searcher"
+                            name="userName"
+                            label="Search for a GitHub user here XD"
+                            placeholder="GitHub User"
+                            helperText=""
+                            margin="normal"
+                            variant="outlined"
+                            required
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        />
+                        <div className="search-button-div">
+                            <Button variant="contained" color="primary" type="submit">
+                                <Search />
+                                Search
+                            </Button>
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }

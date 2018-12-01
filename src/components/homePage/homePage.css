@@ -1,0 +1,26 @@
+#home-searcher{
+    width: 60vw;
+}
+.div-searcher{
+    align-items: center;
+    height: 25vh;
+}
+.search-button-div{
+    width: 100%;
+}
+.div-searcher,
+.search-button-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inspectocat-div-image{
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.inspectocat-image{
+    width: 200px;
+    height: 200px;
+}

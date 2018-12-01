@@ -1,12 +1,8 @@
-.avatar-profile{
-    width: 140px;
-    height: 140px ;
-}
 .profile-card{
-    max-width: 345px;
+    width: 345px;
 }
 .card-media{
-    height: 200px;
+    height: 250px;
 }
 .div-profile-card{
     display: flex;

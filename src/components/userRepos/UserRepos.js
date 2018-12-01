@@ -10,7 +10,7 @@ class UserRepos extends Component {
     render() {
         var repos = this.props.repos.map((repo, key) => {
             return (
-                    <Card className="card-items">
+                    <Card className="card-items" key={key}>
                         <CardContent>
                             <Typography variant="h5" component="h2">
                                 {repo.name}
