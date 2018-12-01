@@ -4,7 +4,7 @@ A GitHub users and repositories searcher
 
 ## Installation
 
-Just clone the project if you want to make yours based on this template.
+Clone the project if you want to make yours based on this template.
 
 ```
 https://github.com/CarlosLevir/GitHub-Searcher.git
